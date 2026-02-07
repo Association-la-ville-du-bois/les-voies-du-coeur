@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plus d'information</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f7f2f2 0%, #df4a4a 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 500px;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        /* Bandeau */
+        .header-banner {
+            background: linear-gradient(135deg, #8d2b2b 0%, #c44a4a 100%);
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .content {
+            padding: 30px 30px;
+        }
+
+        /* Paragraphe de présentation */
+        .description {
+            text-align: center;
+            color: #333;
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        /* Boutons avec icônes */
+        .social-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .social-btn {
+            display: flex;
+            align-items: center;
+            padding: 15px 20px;
+            background: #f8f9fa;
+            border: 2px solid #e9ecef;
+            border-radius: 12px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .social-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            border-color: #c44a4a;
+        }
+
+        .social-icon {
+            width: 32px;
+            height: 32px;
+            margin-right: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .social-icon svg {
+            width: 28px;
+            height: 28px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- BANDEAU -->
+        <div class="header-banner"></div>
+
+        <div class="content">
+            <!-- PARAGRAPHE DE PRÉSENTATION -->
+            <p class="description">
+                Chaque geste compte. Unissons-nous pour un avenir plus lumineux : agir, donner, aimer.
+            </p>
+
+            <!-- BOUTONS AVEC ICÔNES -->
+            <div class="social-buttons">
+                
+                <!-- Bouton 1 - Site Web -->
+                <a href="https://lesvoiesducoeur.wixsite.com/lvdcasso" class="social-btn" target="_blank">
+                    <div class="social-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#4a5568" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                        </svg>
+                    </div>
+                    Mon Site Web
+                </a>
+
+                <!-- Bouton 2 - Instagram -->
+                <a href="https://www.instagram.com/lvdcasso/" class="social-btn" target="_blank">
+                    <div class="social-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#E4405F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </div>
+                    Instagram
+                </a>
+
+                <!-- Bouton 3 - Facebook -->
+                <a href="https://www.facebook.com/aslesvoiesducoeur" class="social-btn" target="_blank">
+                    <div class="social-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#1877F2">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                    </div>
+                    Facebook
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
