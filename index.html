@@ -144,6 +144,23 @@
                     </div>
                     Facebook
     </a>
-
+<script>
+document.getElementById('instagram-link').addEventListener('click', function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    
+    // Essayer d'ouvrir dans l'app Instagram d'abord
+    const appUrl = 'instagram://user?username=lvdcasso';
+    const webUrl = 'https://www.instagram.com/lvdcasso/';
+    
+    // Tenter d'ouvrir l'app
+    window.location.href = appUrl;
+    
+    // Si l'app ne s'ouvre pas, ouvrir le navigateur après un délai
+    setTimeout(function() {
+        window.open(webUrl, '_blank');
+    }, 500);
+});
+</script>
 </body>
 </html>
